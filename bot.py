@@ -11,7 +11,7 @@ from telegram.ext import (
     filters,
 )
 
-nest_asyncio.apply()  # ✅ This fixes the event loop error in Colab
+nest_asyncio.apply()  # Allows nested async loops if needed (mostly safe to keep)
 
 # Replace with your tokens
 TELEGRAM_BOT_TOKEN = "7932747849:AAGmctroqL4zsj-goO_TgKsgWPoEtA2sen0"
@@ -62,5 +62,6 @@ async def main():
     print("✅ Bot is running...")
     await app.run_polling()
 
-# Run it in Colab
-await main()
+# Entry point
+if __name__ == "__main__":
+    asyncio.run(main())
