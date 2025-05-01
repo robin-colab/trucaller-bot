@@ -14,7 +14,7 @@ from telegram.ext import (
 nest_asyncio.apply()  # Allows nested async loops if needed (mostly safe to keep)
 
 # Replace with your tokens
-TELEGRAM_BOT_TOKEN = "7956523095:AAHEKGdDv6WLY9-cKPPEFzVeG5-ukKWhCzI"
+TELEGRAM_BOT_TOKEN = "7821514413:AAGVwwF8QK6divajUUuKP0P8FKXHGLZ2h8o"
 NUMVERIFY_API_KEY = "5aa4f988a6cd9b0687cff9e4dd019f24"
 
 # Logging
